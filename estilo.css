@@ -17,6 +17,7 @@ body
 	overflow-x: hidden;
 }
 
+
 /* Barra de navegação */
 
 #barra-navegacao a:hover
@@ -274,6 +275,14 @@ footer
 {
 	float: left;
 	margin: 0 10px 5px 0;
+}
+
+.img-postagem img
+{
+	max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
 
 
