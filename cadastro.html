@@ -73,25 +73,30 @@
 					<div class="modal-content">
 						<!-- Cabeçalho -->
 						<div class="modal-header">
-							<h4 class="modal-title">Cadastre-se!</h4>
+							<h4 class="h4 modal-title">Cadastre-se!</h4><br>
+							<h5 class="h5 modal-title">Cadastre-se para receber vagas de seu interesse.</h5>
 						</div>
 						<!-- Body -->
 						<div class="modal-body">
 							<div class="form-group">
-								<label class="input-label">Nome da candidata</label>
-								<input type="text" class="form-control" placeholder="Ex.: Maria da Silva" name="" required="Preencha">
+								<label for="nomeCandidata" class="input-label">Nome da candidata</label>
+								<input id="nomeCandidata" type="text" class="form-control" placeholder="Ex.: Maria da Silva" name="" required="Preencha">
 							</div>
 							<div class="form-group">
-								<label class="input-label">E-mail</label>
-								<input type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
+								<label for="emailCandidata" class="input-label">E-mail</label>
+								<input id="emailCandidata" type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
 							</div>
 							<div class="form-group">
-								<label class="input-label">Funções de interesse</label>
-								<input type="text" class="form-control" placeholder="Ex.: Auxiliar administrativo, auxiliar de vendas, etc." name="" required>
+								<label for="funcoesInteresse" class="input-label">Funções de interesse</label>
+								<input id="funcoesInteresse" type="text" class="form-control" placeholder="Ex.: Auxiliar administrativo, auxiliar de vendas, etc." name="" required>
 							</div>
 							<div class="form-group">
-								<label class="input-label">Turno preferencial</label>
-								<input type="text" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="" required="Preencha">
+								<label for="turnoPreferencial" class="input-label">Turno preferencial</label>
+								<input id="turnoPreferencial" type="text" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="" required="Preencha">
+							</div>
+							<div class="form-group">
+							    <label for="exampleFormControlFile1" class="">Envie seu CV</label>
+							    <input type="file" class="form-control-file" id="exampleFormControlFile1">
 							</div>
 						</div>
 						<!-- Rodapé -->
