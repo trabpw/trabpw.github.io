@@ -68,44 +68,44 @@
 	</div>
 
 	<!-- Modal Proposta -->
-			<form class="" id="proposta">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<!-- Cabeçalho -->
-						<div class="modal-header">
-							<h4 class="h4 modal-title">Cadastre-se!</h4><br>
-							<h5 class="h5 modal-title">Cadastre-se para receber vagas de seu interesse.</h5>
-						</div>
-						<!-- Body -->
-						<div class="modal-body">
-							<div class="form-group">
-								<label for="nomeCandidata" class="input-label">Nome da candidata</label>
-								<input id="nomeCandidata" type="text" class="form-control" placeholder="Ex.: Maria da Silva" name="" required="Preencha">
-							</div>
-							<div class="form-group">
-								<label for="emailCandidata" class="input-label">E-mail</label>
-								<input id="emailCandidata" type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
-							</div>
-							<div class="form-group">
-								<label for="funcoesInteresse" class="input-label">Funções de interesse</label>
-								<input id="funcoesInteresse" type="text" class="form-control" placeholder="Ex.: Auxiliar administrativo, auxiliar de vendas, etc." name="" required>
-							</div>
-							<div class="form-group">
-								<label for="turnoPreferencial" class="input-label">Turno preferencial</label>
-								<input id="turnoPreferencial" type="text" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="" required="Preencha">
-							</div>
-							<div class="form-group">
-							    <label for="exampleFormControlFile1" class="">Envie seu CV</label>
-							    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-							</div>
-						</div>
-						<!-- Rodapé -->
-						<div class="modal-footer">
-							<button type="submit" class="btn btn-primary">Cadastrar</button>
-						</div>
+	<form class="" id="cadastro">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Cabeçalho -->
+				<div class="modal-header">
+					<h4 class="h4 modal-title">Cadastre-se!</h4><br>
+					<h5 class="h5 modal-title">Cadastre-se para receber vagas de seu interesse.</h5>
+				</div>
+				<!-- Body -->
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="nomeCandidata" class="input-label">Nome da candidata</label>
+						<input id="nomeCandidata" type="text" class="form-control" placeholder="Ex.: Maria da Silva" name="nome" id="nome" required>
 					</div>
-				</div>	
-			</form>
+					<div class="form-group">
+						<label for="emailCandidata" class="input-label">E-mail</label>
+						<input id="emailCandidata" type="email" class="form-control" placeholder="Digite o e-mail para contato" name="email1" id="email1" required>
+					</div>
+					<div class="form-group">
+						<label for="funcoesInteresse" class="input-label">Funções de interesse</label>
+						<input id="funcoesInteresse" type="text" class="form-control" placeholder="Ex.: Auxiliar administrativo, auxiliar de vendas, etc." name="funcao" id="funcao" required>
+					</div>
+					<div class="form-group">
+						<label for="turnoPreferencial" class="input-label">Turno preferencial</label>
+						<input id="turnoPreferencial" type="text" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="turno" id="turno" required>
+					</div>
+					<div class="form-group">
+					    <label for="cv" class="">Envie seu CV</label>
+					    <input type="file" class="form-control-file" id="cv" name="cv" required>
+					</div>
+				</div>
+				<!-- Rodapé -->
+				<div class="modal-footer">
+					<button type="submit" value="send" class="btn btn-primary">Cadastrar</button>
+				</div>
+			</div>
+		</div>	
+	</form>
 
 	
 	<footer id="rodape">
@@ -137,5 +137,14 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+	<script src="jquery-validation-1.17.0/src/localization/messages_pt_BR.js "></script>
+	<script>
+      $(document).ready(function(){
+        $("#cadastro").validate();
+      });
+    </script>
+	<script type="js/scripts.js"></script>
 </body>
 </html>

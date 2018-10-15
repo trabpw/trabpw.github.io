@@ -66,7 +66,7 @@
 			<h1>Segundo Olhar</h1>		
 		</div> 	
 	</div>
-	<form class="">
+	<form class="" id="fale-conosco">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<!-- Cabeçalho -->
@@ -78,17 +78,17 @@
 				<div class="modal-body">
 					<div class="form-group">
 						<label class="input-label">Digite seu Nome</label>
-						<input type="text" class="form-control" name="valor" placeholder="Ex.: Maria da Silva" required></textarea>		
+						<input type="text" class="form-control" name="nome" required="" id="nome" placeholder="Ex.: Maria da Silva" required></textarea>		
 					</div>
 
 					<div class="form-group">
 								<label class="input-label">E-mail</label>
-								<input type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
+								<input type="email" class="form-control" placeholder="Digite o e-mail para contato" name="email1" id="email1" required="">
 							</div>
 
 					<div class="form-group">
 						<label class="input-label">Digite sua história</label>
-						<textarea class="form-control" rows="5" id="comment"></textarea>		
+						<textarea class="form-control" required="" name="historia" id="historia" rows="5" id="comment"></textarea>		
 					</div>
 				</div>
 				<!-- Rodapé -->
@@ -130,5 +130,14 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+	<script src="jquery-validation-1.17.0/src/localization/messages_pt_BR.js "></script>
+	<script>
+      $(document).ready(function(){
+        $("#fale-conosco").validate();
+      });
+    </script>
+	<script type="js/scripts.js"></script>
 </body>
 </html>

@@ -78,23 +78,23 @@
 						<div class="modal-body">
 							<div class="form-group">
 								<label class="input-label">Nome da empresa</label>
-								<input type="text" class="form-control" placeholder="Ex.: Marmore LTDA" name="" required="Preencha">
+								<input type="text" required minlength="5" id="nomeEmpresa" class="form-control" placeholder="Ex.: Marmore LTDA" name="nomeEmpresa">
 							</div>
 							<div class="form-group">
 								<label class="input-label">E-mail</label>
-								<input type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
+								<input type="email" id="email1" required="Meu pinto" class="form-control" placeholder="Digite o e-mail para contato" name="email1">
 							</div>
 							<div class="form-group">
 								<label class="input-label">Vaga</label>
-								<input type="text" class="form-control" placeholder="Ex.: Auxiliar administrativo" name="" required>
+								<input type="text" id="vaga" required minlength="5" class="form-control" placeholder="Ex.: Auxiliar administrativo" name="vaga">
 							</div>
 							<div class="form-group">
 								<label class="input-label">Turno</label>
-								<input type="text" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="" required="Preencha">
+								<input type="text" id="turno" required minlength="5" class="form-control" placeholder="Ex.: Matinal, Noturno, etc." name="turno">
 							</div>
 							<div class="form-group">
 								<label class="input-label">Salário</label>
-								<input type="number" value="" min="0" step="0.01" class="form-control" name="valor" required>
+								<input type="number" id="salario" required value="" min="0" step="0.01" class="form-control" name="salario">
 							</div>
 						</div>
 						<!-- Rodapé -->
@@ -121,17 +121,17 @@
 						<div class="modal-body">
 							<div class="form-group">
 								<label class="input-label">Digite seu Nome</label>
-	  							<input type="text" class="form-control" name="valor" placeholder="Ex.: Maria da Silva" required></textarea>		
+	  							<input type="text" class="form-control" required id="nome" name="nome" placeholder="Ex.: Maria da Silva" required></textarea>		
 							</div>
 
 							<div class="form-group">
 								<label class="input-label">E-mail</label>
-								<input type="email" class="form-control" placeholder="Digite o e-mail para contato" name="" required="Preencha">
+								<input type="email" class="form-control" required id="email1" name="email1" placeholder="Digite o e-mail para contato">
 							</div>
 
 							<div class="form-group">
 								<label class="input-label">Digite sua história</label>
-	  							<textarea class="form-control" rows="5" id="comment"></textarea>		
+	  							<textarea class="form-control" required id="historia" name="historia" rows="5" id="comment"></textarea>		
 							</div>
 						</div>
 						<!-- Rodapé -->
@@ -213,5 +213,19 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+	<script src="jquery-validation-1.17.0/src/localization/messages_pt_BR.js "></script>
+	<script>
+      $(document).ready(function(){
+        $("#proposta").validate();
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#relato").validate();
+      });
+    </script>
+	<script type="js/scripts.js"></script>
 </body>
 </html>
